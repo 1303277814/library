@@ -19,7 +19,7 @@ $api->version('v1',$params,function ($api) {
             //禁用用户
             $api->patch('users/{user}/lock',[\App\Http\Controllers\Admin\UserController::class,'lock']);
 
-            //用户管理资源路由
+            //用户管理资源路
             $api->resource('users',\App\Http\Controllers\Admin\UserController::class,[
                 'only' =>['index','show']
             ]);
