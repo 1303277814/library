@@ -10,7 +10,7 @@ $params =  [
 
 $api->version('v1',$params,function ($api) {
 
-        //需要登录的路由
+        //需要登录的路
     $api->group(['middleware' =>'api.auth'],function ($api){
         $api->group(['prefix' => 'admin'],function ($api){
             /**
